@@ -13,8 +13,8 @@ class User
     @@user_all << self
   end
 
-  def all
-    
+  def self.all
+    @@user_all
   end
 end
 
@@ -24,17 +24,7 @@ valentin = User.new("valentin.leporatti@laposte.net", 18)
 katia = User.new("katia.leporatti@laposte.net", 51)
 serge = User.new("serge.lporatti@lapsote.net", 52)
 
-puts romain.email
-puts theo.email
-puts valentin.email
-puts katia.email
-puts serge.email
-
-puts romain.age
-puts theo.age
-puts valentin.age
-puts katia.age
-puts serge.age
+puts User.all
 
 binding.pry
 
